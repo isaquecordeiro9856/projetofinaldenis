@@ -1,0 +1,291 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primariamarrom:#140b04;
+    --secundariaamarela:#C8860A;
+    --terciariarosa:#F2D0C0;
+    --neutra:#FAF3E0;
+    --branco:white;
+    --preto:black;
+    --cordanav:#3B1F0A;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    background-color: var(--primariamarrom);
+    color: var(--branco);
+    font-family: 'Playfair Display', serif;
+    
+}
+
+.parteprincipalheader{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+
+
+/*parte da navbar*/
+nav{
+    background-color: var(--cordanav);
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    align-items: center;
+    border-bottom: 1px solid rgb(24, 14, 0);
+}
+
+.conteudonav{
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.partenavesquerda{
+    display: flex;
+    font-size: 32px; 
+}
+
+.partenavdireita ul{
+    display: flex;
+    gap: 40px;
+    font-size: 16px;
+    align-items: center;
+}
+
+.partenavdireita ul li{
+    list-style: none;
+}
+
+#badgedopeca{
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secundariaamarela);
+    color: var(--preto);
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+
+/*parte do header das informaçoes*/
+
+/*parte da esquerda dos titulos*/
+.parteinfos{
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.parteinfoesquerda{
+    width: 700px;
+}
+
+
+
+.tituloinfo{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+span{
+    color: var(--branco);
+}
+
+#letraamarela{
+    color: var(--secundariaamarela);
+    font-style: italic;
+}
+
+.parteinfoesquerda h1{
+    font-size: 92px;
+}
+
+/*parte da descrição da esquerda*/
+.descricaoinfo{
+    margin-top: 10px;
+    font-size: 18px;
+    color: rgb(209, 209, 209);
+}
+
+
+/*parte dos botoes*/
+.infobotoes{
+    margin-top: 40px;
+}
+
+.botaoamarelo{
+    background-color: var(--secundariaamarela);
+    border-style: none;
+    height: 45px;
+    width: 120px;
+    border-radius: 30px;
+}
+
+.botaoamarelo a{
+    text-decoration: none;
+    color: var(--preto);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.botaotransparente{
+    border-style: none;
+    border: 1px solid white;
+    background-color: var(--primariamarrom);
+    border-color: var(--branco);
+    height: 45px;
+    width: 120px;
+    border-radius: 30px;
+    margin-left: 20px;
+}
+
+.botaotransparente a{
+    color: var(--branco);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+/*parte da direita do header*/
+.parteinfodireita img{
+    width: 100%;
+    max-width: 800px;
+    height: 800px;
+    border-radius: 40px;
+    object-fit: cover;
+}
+
+
+
+/*sabores*/
+.principalsabores{
+    padding-top: 90px;
+    background-color: var(--neutra);
+}
+
+.sabores{
+    width: 90vw;
+    margin: 0 auto;
+    
+}
+
+.saborestitulo{
+    text-align: center;
+    color: var(--cordanav);
+}
+
+.saborestitulo h2{
+    font-size: 80px;
+    font-family: 'Playfair Display', serif;
+}
+
+.saborestitulo p{
+    font-size: 25px;
+}
+
+
+.partecardsabores{
+    padding-top: 100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 100px;
+    padding-bottom: 100px;
+}
+
+.cardsabor{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 450px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    object-fit: cover;
+    background-color: var(--branco);
+    border-radius: 30px;
+    margin: 0 auto;
+}
+
+.cardsabor img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.cardsabor h4{
+    color: var(--cordanav);
+    font-family: 'Playfair Display', serif;
+    margin-top: 30px;
+    font-size: 40px;
+    padding-left: 20px;
+}
+
+
+.cardsabor p{
+    font-size: 20px;
+    margin-top: 10px;
+    padding-left: 20px;
+    width: 400px;
+
+}
+
+.cardsabor a{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--cordanav);
+    font-size: 20px;
+    margin-left: 20px;
+    width: 150px;
+    background-color:var(--neutra);
+    border-radius: 30px;
+    height: 50px;
+    font-weight: bold;
+    border: 1px solid;
+}
+
+
+@media (max-width: 1627px){
+    .parteinfos{
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+        text-align: center;
+    }
+
+    .parteinfodireita img{
+        display: flex;
+        width: 70%;
+        height: 400px;
+    }
+
+    .parteinfodireita{
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+
+
+
