@@ -12,6 +12,7 @@
     --branco:white;
     --preto:black;
     --cordanav:#3B1F0A;
+    --cinza:rgb(206, 206, 206);
 }
 
 body{
@@ -34,7 +35,7 @@ header{
 
 /*parte da navbar*/
 nav{
-    background-color: var(--cordanav);
+    background-color: var(--primariamarrom);
     display: flex;
     justify-content: space-between;
     height: 90px;
@@ -105,7 +106,7 @@ span{
     color: var(--branco);
 }
 
-#letraamarela{
+.letraamarela{
     color: var(--secundariaamarela);
     font-style: italic;
 }
@@ -263,6 +264,69 @@ span{
     font-weight: bold;
     border: 1px solid;
 }
+
+.comofunciona{
+    padding-top: 100px;
+    background-color: var(--cordanav);
+    color: var(--branco);
+    padding-bottom: 200px;
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Playfair Display', serif;
+}
+
+
+
+.iconcomofunciona{
+    background-color: var(--preto);
+    height: 110px;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 80px;
+    border: 2px solid var(--secundariaamarela);
+}
+
+.iconcomofunciona img{
+    height: 50px;
+}
+
+.parteitenscomofunciona{
+    padding-top: 70px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.itemcomofunciona{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    min-width: 300px;
+    flex-wrap: wrap;
+}
+
+.textocomofunciona{
+    padding-top: 30px;
+}
+
+.textocomofunciona h4{
+    font-size: 22px;
+    text-align: center;
+}
+
+.textocomofunciona p{
+    padding-top: 30px;
+    font-size: 18px;
+    text-align: center;
+    max-width: 400px;
+    color: var(--cinza);
+}
+
 
 
 @media (max-width: 1627px){
