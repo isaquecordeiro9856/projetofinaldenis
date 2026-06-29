@@ -13,6 +13,7 @@
     --preto:black;
     --cordanav:#3B1F0A;
     --cinza:rgb(206, 206, 206);
+    --bgdoscardscomofunciona:rgba(255, 255, 255, 0.05);;
 }
 
 body{
@@ -265,66 +266,147 @@ span{
     border: 1px solid;
 }
 
+/*parte do como funciona*/
 .comofunciona{
-    padding-top: 100px;
+    padding-top: 90px;
     background-color: var(--cordanav);
-    color: var(--branco);
-    padding-bottom: 200px;
+    padding-bottom: 90px;
+}
+
+.auxcomofunciona{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+/*titulo*/
+.titulodocomofunciona{
     text-align: center;
+    color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.decoracao-titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.traco{
+    width: 50px;
+    height: 1px;
+    background-color: var(--secundariaamarela);
+}
+
+.titulodocomofunciona p{
+    font-size: 16px;
+    
+}
+
+.titulodocomofunciona h2{
     font-size: 80px;
     font-family: 'Playfair Display', serif;
 }
 
-
-
-.iconcomofunciona{
-    background-color: var(--preto);
-    height: 110px;
-    width: 110px;
+/*principal*/
+.principaldocomofunciona{
+    margin-top: 100px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 80px;
-    border: 2px solid var(--secundariaamarela);
+    gap: 40px;
 }
 
-.iconcomofunciona img{
-    height: 50px;
+.parteesquerdadocomofunciona img{
+    height: 100%;
+    width: 500px;
+    object-fit: cover;
+    border-radius: 20px;
 }
 
-.parteitenscomofunciona{
-    padding-top: 70px;
+/*cards*/
+.cardsdocomofunciona{
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.itemcomofunciona{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    width: 30%;
-    min-width: 300px;
-    flex-wrap: wrap;
+    gap: 30px;
 }
 
-.textocomofunciona{
-    padding-top: 30px;
+.cardcomofunciona img{
+    width: 80px;
+    height: 40px;
+    
 }
 
-.textocomofunciona h4{
-    font-size: 22px;
-    text-align: center;
+.esqcardcomofunciona{
+    height: 80px;
+    width: 80px;
+    background-color: #140b0459;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.textocomofunciona p{
-    padding-top: 30px;
+.cardcomofunciona{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    height: 300px;
+    background-color: var(--bgdoscardscomofunciona);
+    justify-content: space-between;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    color: var(--neutra);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.cardcomofunciona p{
     font-size: 18px;
-    text-align: center;
-    max-width: 400px;
-    color: var(--cinza);
+    font-weight: 300;
+}
+
+.cardcomofunciona h3{
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+}
+
+.cardcomofunciona h3::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 40px;
+    height: 1px;
+    background-color: #C8860A;
+}
+
+
+.dircardcomofunciona{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.cabecalho-passo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    
+}
+
+.cabecalho-passo p{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.linha-passo{
+    flex:1;
+    height:1px;
+    background-color: var(--bgdoscardscomofunciona);
 }
 
 
