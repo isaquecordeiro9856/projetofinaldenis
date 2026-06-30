@@ -198,6 +198,7 @@ span{
 
 .saborestitulo p{
     font-size: 25px;
+    color: var(--cordanav);
 }
 
 
@@ -245,26 +246,11 @@ span{
     margin-top: 10px;
     padding-left: 20px;
     width: 400px;
-
-}
-
-.cardsabor a{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
+    padding-bottom: 30px;
     color: var(--cordanav);
-    font-size: 20px;
-    margin-left: 20px;
-    width: 150px;
-    background-color:var(--neutra);
-    border-radius: 30px;
-    height: 50px;
-    font-weight: bold;
-    border: 1px solid;
+
 }
+
 
 /*parte do como funciona*/
 .comofunciona{
@@ -320,7 +306,8 @@ span{
 
 .parteesquerdadocomofunciona img{
     height: 100%;
-    width: 700px;
+    width: 100%;
+    max-width: 700px;
     object-fit: cover;
     border-radius: 20px;
 }
@@ -371,6 +358,7 @@ span{
     font-size: 30px;
     font-family: 'Playfair Display', serif;
     position: relative;
+    color: var(--neutra);
 }
 
 .cardcomofunciona h3::after{
@@ -407,6 +395,178 @@ span{
     flex:1;
     height:1px;
     background-color: var(--bgdoscardscomofunciona);
+}
+
+/*formulario*/
+.formulario{
+    background-color: var(--neutra);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.auxform{
+    width: 100%;
+    max-width: 800px;
+    border-radius: 30px;
+    background-color: var(--branco);
+    margin: 0 auto;
+    padding-bottom: 100px;
+    
+}
+
+.formulariotitulo{
+    padding-top: 80px;
+    text-align: center;
+}
+
+.formulariotitulo p{
+    font-size: 16px;
+}
+
+.formulariotitulo h2{
+    font-size: 70px;
+    font-family: 'Playfair display', arial;
+    color: var(--primariamarrom);
+    position: relative;
+}
+
+.linhaformtitulo{
+    height: 1px;
+    width: 200px;
+    background-color: #c8850a4f;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+
+.partedoformulario{
+    margin-top: 50px;
+}
+
+.camposinput{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+}
+
+.campo input{
+    width: 300px;
+    height: 35px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.campo input::placeholder{
+    padding-left: 10px;
+}
+
+.formulariosabores{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+
+
+
+.formulario label, h3{
+    color: var(--cordanav);
+}
+
+.partedoform{
+    margin-top: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
+
+}
+
+.camposcheck{
+    background-color:var();
+    margin-top: 5px;
+}
+
+.enviarform{
+    width: 250px;
+    height: 50px;
+    background-color: var(--cordanav);
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.enviarform img{
+    display: flex;
+    align-items: center;
+    height: 25px;
+}
+
+.enviarform input{
+    background-color: var(--cordanav);
+    border-style: none;
+    color: var(--branco);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+footer{
+    background-color: var(--primariamarrom);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.auxfooter{
+    display: grid;
+    width: 90vw;
+    margin: 0 auto;
+    color: var(--neutra);
+    font-weight: lighter;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.auxfooter li, p{
+    color: rgba(255, 255, 255, 0.623);
+}
+
+.iconesfooter{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.iconesfooter img{
+    display: flex;
+    height: 15px;
+}
+
+li{
+    list-style: none;
+}
+
+.destaquefooter{
+    color: var(--branco) !important;
+    font-weight: bold;
+}
+
+.sectionfooter2 ul, .sectionfooter3 ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 
